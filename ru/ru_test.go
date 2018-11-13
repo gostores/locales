@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gostores/locales"
-	"github.com/gostores/locales/currency"
+	"github.com/govenue/locales"
+	"github.com/govenue/locales/currency"
 )
 
 func TestLocale(t *testing.T) {
@@ -25,9 +25,9 @@ func TestPluralsRange(t *testing.T) {
 	tests := []struct {
 		expected locales.PluralRule
 	}{
-	// {
-	// 	expected: locales.PluralRuleOther,
-	// },
+		// {
+		// 	expected: locales.PluralRuleOther,
+		// },
 	}
 
 	rules := trans.PluralsRange()
@@ -59,18 +59,18 @@ func TestPluralsOrdinal(t *testing.T) {
 	tests := []struct {
 		expected locales.PluralRule
 	}{
-	// {
-	// 	expected: locales.PluralRuleOne,
-	// },
-	// {
-	// 	expected: locales.PluralRuleTwo,
-	// },
-	// {
-	// 	expected: locales.PluralRuleFew,
-	// },
-	// {
-	// 	expected: locales.PluralRuleOther,
-	// },
+		// {
+		// 	expected: locales.PluralRuleOne,
+		// },
+		// {
+		// 	expected: locales.PluralRuleTwo,
+		// },
+		// {
+		// 	expected: locales.PluralRuleFew,
+		// },
+		// {
+		// 	expected: locales.PluralRuleOther,
+		// },
 	}
 
 	rules := trans.PluralsOrdinal()
@@ -102,12 +102,12 @@ func TestPluralsCardinal(t *testing.T) {
 	tests := []struct {
 		expected locales.PluralRule
 	}{
-	// {
-	// 	expected: locales.PluralRuleOne,
-	// },
-	// {
-	// 	expected: locales.PluralRuleOther,
-	// },
+		// {
+		// 	expected: locales.PluralRuleOne,
+		// },
+		// {
+		// 	expected: locales.PluralRuleOther,
+		// },
 	}
 
 	rules := trans.PluralsCardinal()
@@ -143,13 +143,13 @@ func TestRangePlurals(t *testing.T) {
 		v2       uint64
 		expected locales.PluralRule
 	}{
-	// {
-	// 	num1:     1,
-	// 	v1:       1,
-	// 	num2:     2,
-	// 	v2:       2,
-	// 	expected: locales.PluralRuleOther,
-	// },
+		// {
+		// 	num1:     1,
+		// 	v1:       1,
+		// 	num2:     2,
+		// 	v2:       2,
+		// 	expected: locales.PluralRuleOther,
+		// },
 	}
 
 	for _, tt := range tests {
@@ -169,26 +169,26 @@ func TestOrdinalPlurals(t *testing.T) {
 		v        uint64
 		expected locales.PluralRule
 	}{
-	// {
-	// 	num:      1,
-	// 	v:        0,
-	// 	expected: locales.PluralRuleOne,
-	// },
-	// {
-	// 	num:      2,
-	// 	v:        0,
-	// 	expected: locales.PluralRuleTwo,
-	// },
-	// {
-	// 	num:      3,
-	// 	v:        0,
-	// 	expected: locales.PluralRuleFew,
-	// },
-	// {
-	// 	num:      4,
-	// 	v:        0,
-	// 	expected: locales.PluralRuleOther,
-	// },
+		// {
+		// 	num:      1,
+		// 	v:        0,
+		// 	expected: locales.PluralRuleOne,
+		// },
+		// {
+		// 	num:      2,
+		// 	v:        0,
+		// 	expected: locales.PluralRuleTwo,
+		// },
+		// {
+		// 	num:      3,
+		// 	v:        0,
+		// 	expected: locales.PluralRuleFew,
+		// },
+		// {
+		// 	num:      4,
+		// 	v:        0,
+		// 	expected: locales.PluralRuleOther,
+		// },
 	}
 
 	for _, tt := range tests {
@@ -208,16 +208,16 @@ func TestCardinalPlurals(t *testing.T) {
 		v        uint64
 		expected locales.PluralRule
 	}{
-	// {
-	// 	num:      1,
-	// 	v:        0,
-	// 	expected: locales.PluralRuleOne,
-	// },
-	// {
-	// 	num:      4,
-	// 	v:        0,
-	// 	expected: locales.PluralRuleOther,
-	// },
+		// {
+		// 	num:      1,
+		// 	v:        0,
+		// 	expected: locales.PluralRuleOne,
+		// },
+		// {
+		// 	num:      4,
+		// 	v:        0,
+		// 	expected: locales.PluralRuleOther,
+		// },
 	}
 
 	for _, tt := range tests {
@@ -679,14 +679,14 @@ func TestFmtTimeFull(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, loc),
-	// 	expected: "9:05:01 am Eastern Standard Time",
-	// },
-	// {
-	// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, fixed),
-	// 	expected: "8:05:01 pm OTHER",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, loc),
+		// 	expected: "9:05:01 am Eastern Standard Time",
+		// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, fixed),
+		// 	expected: "8:05:01 pm OTHER",
+		// },
 	}
 
 	trans := New()
@@ -710,14 +710,14 @@ func TestFmtTimeLong(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, loc),
-	// 	expected: "9:05:01 am EST",
-	// },
-	// {
-	// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, loc),
-	// 	expected: "8:05:01 pm EST",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, loc),
+		// 	expected: "9:05:01 am EST",
+		// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, loc),
+		// 	expected: "8:05:01 pm EST",
+		// },
 	}
 
 	trans := New()
@@ -736,14 +736,14 @@ func TestFmtTimeMedium(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, time.UTC),
-	// 	expected: "9:05:01 am",
-	// },
-	// {
-	// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, time.UTC),
-	// 	expected: "8:05:01 pm",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, time.UTC),
+		// 	expected: "9:05:01 am",
+		// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, time.UTC),
+		// 	expected: "8:05:01 pm",
+		// },
 	}
 
 	trans := New()
@@ -762,14 +762,14 @@ func TestFmtTimeShort(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, time.UTC),
-	// 	expected: "9:05 am",
-	// },
-	// {
-	// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, time.UTC),
-	// 	expected: "8:05 pm",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 5, 1, 0, time.UTC),
+		// 	expected: "9:05 am",
+		// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 20, 5, 1, 0, time.UTC),
+		// 	expected: "8:05 pm",
+		// },
 	}
 
 	trans := New()
@@ -788,10 +788,10 @@ func TestFmtDateFull(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
-	// 	expected: "Wednesday, February 3, 2016",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
+		// 	expected: "Wednesday, February 3, 2016",
+		// },
 	}
 
 	trans := New()
@@ -810,10 +810,10 @@ func TestFmtDateLong(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
-	// 	expected: "February 3, 2016",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
+		// 	expected: "February 3, 2016",
+		// },
 	}
 
 	trans := New()
@@ -832,10 +832,10 @@ func TestFmtDateMedium(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
-	// 	expected: "Feb 3, 2016",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
+		// 	expected: "Feb 3, 2016",
+		// },
 	}
 
 	trans := New()
@@ -854,14 +854,14 @@ func TestFmtDateShort(t *testing.T) {
 		t        time.Time
 		expected string
 	}{
-	// {
-	// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
-	// 	expected: "2/3/16",
-	// },
-	// {
-	// 	t:        time.Date(-500, 02, 03, 9, 0, 1, 0, time.UTC),
-	// 	expected: "2/3/500",
-	// },
+		// {
+		// 	t:        time.Date(2016, 02, 03, 9, 0, 1, 0, time.UTC),
+		// 	expected: "2/3/16",
+		// },
+		// {
+		// 	t:        time.Date(-500, 02, 03, 9, 0, 1, 0, time.UTC),
+		// 	expected: "2/3/500",
+		// },
 	}
 
 	trans := New()
@@ -942,60 +942,60 @@ func TestFmtCurrency(t *testing.T) {
 		currency currency.Type
 		expected string
 	}{
-	// {
-	// 	num:      1123456.5643,
-	// 	v:        2,
-	// 	currency: currency.USD,
-	// 	expected: "$1,123,456.56",
-	// },
-	// {
-	// 	num:      1123456.5643,
-	// 	v:        1,
-	// 	currency: currency.USD,
-	// 	expected: "$1,123,456.60",
-	// },
-	// {
-	// 	num:      221123456.5643,
-	// 	v:        3,
-	// 	currency: currency.USD,
-	// 	expected: "$221,123,456.564",
-	// },
-	// {
-	// 	num:      -221123456.5643,
-	// 	v:        3,
-	// 	currency: currency.USD,
-	// 	expected: "-$221,123,456.564",
-	// },
-	// {
-	// 	num:      -221123456.5643,
-	// 	v:        3,
-	// 	currency: currency.CAD,
-	// 	expected: "-CAD 221,123,456.564",
-	// },
-	// {
-	// 	num:      0,
-	// 	v:        2,
-	// 	currency: currency.USD,
-	// 	expected: "$0.00",
-	// },
-	// {
-	// 	num:      -0,
-	// 	v:        2,
-	// 	currency: currency.USD,
-	// 	expected: "$0.00",
-	// },
-	// {
-	// 	num:      -0,
-	// 	v:        2,
-	// 	currency: currency.CAD,
-	// 	expected: "CAD 0.00",
-	// },
-	// {
-	// 	num:      1.23,
-	// 	v:        0,
-	// 	currency: currency.USD,
-	// 	expected: "$1.00",
-	// },
+		// {
+		// 	num:      1123456.5643,
+		// 	v:        2,
+		// 	currency: currency.USD,
+		// 	expected: "$1,123,456.56",
+		// },
+		// {
+		// 	num:      1123456.5643,
+		// 	v:        1,
+		// 	currency: currency.USD,
+		// 	expected: "$1,123,456.60",
+		// },
+		// {
+		// 	num:      221123456.5643,
+		// 	v:        3,
+		// 	currency: currency.USD,
+		// 	expected: "$221,123,456.564",
+		// },
+		// {
+		// 	num:      -221123456.5643,
+		// 	v:        3,
+		// 	currency: currency.USD,
+		// 	expected: "-$221,123,456.564",
+		// },
+		// {
+		// 	num:      -221123456.5643,
+		// 	v:        3,
+		// 	currency: currency.CAD,
+		// 	expected: "-CAD 221,123,456.564",
+		// },
+		// {
+		// 	num:      0,
+		// 	v:        2,
+		// 	currency: currency.USD,
+		// 	expected: "$0.00",
+		// },
+		// {
+		// 	num:      -0,
+		// 	v:        2,
+		// 	currency: currency.USD,
+		// 	expected: "$0.00",
+		// },
+		// {
+		// 	num:      -0,
+		// 	v:        2,
+		// 	currency: currency.CAD,
+		// 	expected: "CAD 0.00",
+		// },
+		// {
+		// 	num:      1.23,
+		// 	v:        0,
+		// 	currency: currency.USD,
+		// 	expected: "$1.00",
+		// },
 	}
 
 	trans := New()
@@ -1016,54 +1016,54 @@ func TestFmtAccounting(t *testing.T) {
 		currency currency.Type
 		expected string
 	}{
-	// {
-	// 	num:      1123456.5643,
-	// 	v:        2,
-	// 	currency: currency.USD,
-	// 	expected: "$1,123,456.56",
-	// },
-	// {
-	// 	num:      1123456.5643,
-	// 	v:        1,
-	// 	currency: currency.USD,
-	// 	expected: "$1,123,456.60",
-	// },
-	// {
-	// 	num:      221123456.5643,
-	// 	v:        3,
-	// 	currency: currency.USD,
-	// 	expected: "$221,123,456.564",
-	// },
-	// {
-	// 	num:      -221123456.5643,
-	// 	v:        3,
-	// 	currency: currency.USD,
-	// 	expected: "($221,123,456.564)",
-	// },
-	// {
-	// 	num:      -221123456.5643,
-	// 	v:        3,
-	// 	currency: currency.CAD,
-	// 	expected: "(CAD 221,123,456.564)",
-	// },
-	// {
-	// 	num:      -0,
-	// 	v:        2,
-	// 	currency: currency.USD,
-	// 	expected: "$0.00",
-	// },
-	// {
-	// 	num:      -0,
-	// 	v:        2,
-	// 	currency: currency.CAD,
-	// 	expected: "CAD 0.00",
-	// },
-	// {
-	// 	num:      1.23,
-	// 	v:        0,
-	// 	currency: currency.USD,
-	// 	expected: "$1.00",
-	// },
+		// {
+		// 	num:      1123456.5643,
+		// 	v:        2,
+		// 	currency: currency.USD,
+		// 	expected: "$1,123,456.56",
+		// },
+		// {
+		// 	num:      1123456.5643,
+		// 	v:        1,
+		// 	currency: currency.USD,
+		// 	expected: "$1,123,456.60",
+		// },
+		// {
+		// 	num:      221123456.5643,
+		// 	v:        3,
+		// 	currency: currency.USD,
+		// 	expected: "$221,123,456.564",
+		// },
+		// {
+		// 	num:      -221123456.5643,
+		// 	v:        3,
+		// 	currency: currency.USD,
+		// 	expected: "($221,123,456.564)",
+		// },
+		// {
+		// 	num:      -221123456.5643,
+		// 	v:        3,
+		// 	currency: currency.CAD,
+		// 	expected: "(CAD 221,123,456.564)",
+		// },
+		// {
+		// 	num:      -0,
+		// 	v:        2,
+		// 	currency: currency.USD,
+		// 	expected: "$0.00",
+		// },
+		// {
+		// 	num:      -0,
+		// 	v:        2,
+		// 	currency: currency.CAD,
+		// 	expected: "CAD 0.00",
+		// },
+		// {
+		// 	num:      1.23,
+		// 	v:        0,
+		// 	currency: currency.USD,
+		// 	expected: "$1.00",
+		// },
 	}
 
 	trans := New()

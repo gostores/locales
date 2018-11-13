@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gostores/locales"
-	"github.com/gostores/locales/currency"
+	"github.com/govenue/locales"
+	"github.com/govenue/locales/currency"
 )
 
 type sn struct {

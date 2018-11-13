@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gostores/locales/currency"
+	"github.com/govenue/locales/currency"
 )
 
 // // ErrBadNumberValue is returned when the number passed for

@@ -1,8 +1,8 @@
 ## locales
 <img align="right" src="https://raw.githubusercontent.com/go-playground/locales/master/logo.png">![Project status](https://img.shields.io/badge/version-0.11.1-green.svg)
 [![Build Status](https://semaphoreci.com/api/v1/joeybloggs/locales/branches/master/badge.svg)](https://semaphoreci.com/joeybloggs/locales)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gostores/locales)](https://goreportcard.com/report/github.com/gostores/locales)
-[![GoDoc](https://godoc.org/github.com/gostores/locales?status.svg)](https://godoc.org/github.com/gostores/locales)
+[![Go Report Card](https://goreportcard.com/badge/github.com/govenue/locales)](https://goreportcard.com/report/github.com/govenue/locales)
+[![GoDoc](https://godoc.org/github.com/govenue/locales?status.svg)](https://godoc.org/github.com/govenue/locales)
 ![License](https://img.shields.io/dub/l/vibe-d.svg)
 [![Gitter](https://badges.gitter.im/go-playground/locales.svg)](https://gitter.im/go-playground/locales?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -21,7 +21,7 @@ Features
 Full Tests
 --------------------
 I could sure use your help adding tests for every locale, it is a huge undertaking and I just don't have the free time to do it all at the moment;
-any help would be **greatly appreciated!!!!** please see [issue](https://github.com/gostores/locales/issues/1) for details.
+any help would be **greatly appreciated!!!!** please see [issue](https://github.com/govenue/locales/issues/1) for details.
 
 Installation
 -----------
@@ -29,7 +29,7 @@ Installation
 Use go get 
 
 ```shell
-go get github.com/gostores/locales
+go get github.com/govenue/locales
 ```  
 
 NOTES
@@ -46,8 +46,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gostores/locales/currency"
-	"github.com/gostores/locales/en_CA"
+	"github.com/govenue/locales/currency"
+	"github.com/govenue/locales/en_CA"
 )
 
 func main() {
